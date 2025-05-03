@@ -47,8 +47,8 @@ net.ipv4.ip_forward                 = 1
 EOF
 sudo sysctl --system
 
-# Initialize Kubernetes cluster (replace the IP with your master node's IP)
-sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.40.144 --upload-certs
+MASTER_IP=$(hostname -I | awk '{print $1}')
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=$MASTER_IP --upload-certs
 
 # Save the kubeadm join command
 kubeadm token create --print-join-command > /tmp/kubeadm_join_cmd.sh
