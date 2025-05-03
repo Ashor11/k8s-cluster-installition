@@ -41,6 +41,9 @@ net.ipv4.ip_forward                 = 1
 EOF
 sudo sysctl --system
 
+sudo systemctl restart containerd
+sudo systemctl enable containerd
+
 # Run the join command from master (paste here or use scp to copy from master)
 echo "Paste the kubeadm join command below:"
 read -p ">> " join_cmd
