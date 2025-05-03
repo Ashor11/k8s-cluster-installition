@@ -47,6 +47,9 @@ net.ipv4.ip_forward                 = 1
 EOF
 sudo sysctl --system
 
+sudo systemctl restart containerd
+sudo systemctl enable containerd
+
 MASTER_IP=$(hostname -I | awk '{print $1}')
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=$MASTER_IP --upload-certs
 
