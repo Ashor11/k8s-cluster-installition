@@ -6,7 +6,7 @@ This repository provides automated bash scripts to install, configure, and remov
 > Supports both **RHEL-based** systems (CentOS, Rocky Linux, AlmaLinux) and **Ubuntu-based** systems.
 
 ## 📁 Repository Structure
----
+```
 
 ├── rhel/
 │ ├── install-master.sh # Script to setup control plane on RHEL
@@ -17,7 +17,7 @@ This repository provides automated bash scripts to install, configure, and remov
 │ ├── install-worker.sh # Script to join worker node on Ubuntu
 │ └── delete-k8s.sh # Script to uninstall cluster on Ubuntu
 
----
+```
 
 ## ✅ Features
 
