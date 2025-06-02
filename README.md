@@ -34,4 +34,7 @@ Choose your OS:
 
 - [RHEL-based Instructions](./rhel/README.md)
 - [Ubuntu-based Instructions](./ubuntu/README.md)
-## for auto complete activation echo 'source <(kubectl completion zsh)' >> ~/.zshrc
+## for auto complete activation
+```
+echo 'source <(kubectl completion zsh)' >> ~/.zshrc
+```
