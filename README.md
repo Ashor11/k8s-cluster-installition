@@ -36,5 +36,5 @@ Choose your OS:
 - [Ubuntu-based Instructions](./ubuntu/README.md)
 ## for auto complete activation
 ```
-echo 'source <(kubectl completion zsh)' >> ~/.zshrc
+echo 'source <(kubectl completion bash)' >> ~/.bashrc
 ```
